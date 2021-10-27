@@ -1,3 +1,3 @@
 # hellow-world
 
-I am Zacharu nice to meet you in Durham.
+I am Zachary nice to meet you in Durham.
