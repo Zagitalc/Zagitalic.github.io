@@ -1,3 +1,3 @@
 # hellow-world
 
-I am Zachary nice to meet you in Durham.
+I am Zachary and will be presenting you a website about Climate Change.
