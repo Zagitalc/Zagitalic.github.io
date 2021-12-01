@@ -1,7 +1,5 @@
 //chart.js charts used in dataset
-import { Chart, LineController, LineElement, PointElement, LinearScale, Title } from 'chart.js'
 
-Chart.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
 const ctx = document.getElementById('myChart1');
