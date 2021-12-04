@@ -10,7 +10,7 @@ d3.csv(chartData).then(function(ds){
 
 const ctx = document.getElementById('myChart1');
     const myChart1 = new Chart(ctx, {
-        type: 'bar',
+        type: 'bar', 
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             datasets: [{
