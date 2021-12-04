@@ -1,6 +1,12 @@
 //chart.js charts used in dataset
 
+const chartData = 'hurricane data from noaa selected.csv';
+d3.csv(chartData).then(function(ds){
+    console.log(ds)
+});
+    
 
+    
 
 const ctx = document.getElementById('myChart1');
     const myChart1 = new Chart(ctx, {
