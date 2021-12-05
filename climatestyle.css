@@ -1,13 +1,14 @@
- body {
-            background-color: rgb(226, 236, 236);
-        }
-        h1 {
-            color: rgb(44, 104, 9);
-            text-align: center;
-            font-family: inherit;
-        }
-        p {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: left;
-            font-size: medium;
-        }
+body {
+  background-color: rgb(226, 236, 236);
+}
+h1 {
+  color: rgb(44, 104, 9);
+  text-align: center;
+  font-family: inherit;
+}
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  font-size: medium;
+}
