@@ -15,15 +15,13 @@ var x = d3.scaleBand()
 .range([0, width])
 .padding(0.1);
 var y = d3.scaleLinear()
-
 .range([height, 0]);
 
 // append the svg object to the body of the page
-// append a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
+
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_dataviz").append("svg")
+var svg = d3.select("#windspeed_chart").append("svg")
 .attr("width", width + margin.left + margin.right)
 .attr("height", height + margin.top + margin.bottom)
 .append("g")
@@ -45,7 +43,7 @@ y.domain([50, d3.max(data, function(d) { return d.Windspeed; })]);
 
 
 // append the rectangles for the bar chart
-svg.selectAll("mybar")
+svg.selectAll(".bar")
 .data(data)
 .enter()
 .append("rect")
@@ -55,6 +53,7 @@ svg.selectAll("mybar")
 .attr("y", function(d) { return y(d.Windspeed); })
 .attr("height", function(d) { return height - y(d.Windspeed); });
 
+  
 
 // add the x Axis
 svg.append("g")
