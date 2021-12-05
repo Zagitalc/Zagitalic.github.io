@@ -281,20 +281,22 @@
         </div>
         
         
-    <p>here's a sample chart. Please modify by inserting your data from the csv!!</p>
-
-      <!--d3 js-->
-      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" integrity="sha512-COTaPOlz12cG4fSfcBsxZsjauBAyldqp+8FQUM/dZHm+ts/jR4AFoJhCqxy8K10Jrf3pojfsbq7fAPTb1XaVkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"-->
-     
-    <p>Figure 1.0</p>
-     <!-- Create a div where the graph will take place -->
+    
+    <!-- A graph will take place -->
    
     
-    <!--<script src="lgraph.js"></script> -->
-     <!--<canvas id="myChart1" width="400" height="400"></canvas>--> 
-    <div id="windspeed_chart"></div>
-    <script src="chartsnfigures.js"></script>
-
+    <div class="container">
+      <p>here's a sample chart. Please modify by inserting your data from the csv!!</p>
+      <a class="btn btn-primary btn-lg" role="button" onclick="update('Frequency')">Frequency of Hurricanes of the Decade</a>
+      <a class="btn btn-primary btn-lg" role="button" onclick="update('FreqOverhundred')">Frequency of Hurricanes windspeeds over 100mph</a>
+      <a class="btn btn-primary btn-lg" role="button" onclick="update('percentage')">Percentage (over 100mph / total no. of Hurricanes) </a>
+      
+      
+      <p>Figure 1.0</p>
+     
+      <div id="windspeed_chart"></div>
+      <script src="chartsnfigures.js"></script>
+    </div>
       
 
     
