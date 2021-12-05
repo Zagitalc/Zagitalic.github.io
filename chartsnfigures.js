@@ -14,25 +14,25 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
 
 // append svg to body
 var svg = d3.select("#windspeed_chart").append("svg")
-.attr("width", width + margin.left + margin.right)
-.attr("height", height + margin.top + margin.bottom)
-.append("g")
-.attr("transform", 
-"translate(" + margin.left + "," + margin.top + ")");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", 
+    "translate(" + margin.left + "," + margin.top + ")");
 
 //set variables x, y, X and Y axes 
 var x = d3.scaleBand()
-.range([0, width])
-.padding(0.1);
+    .range([0, width])
+    .padding(0.1);
 var xAxis = svg.append("g")
-  .attr("transform", "translate(0," + height + ")")
-
+    .attr("transform", "translate(0," + height + ")")
+    
 
 
 var y = d3.scaleLinear()
-.range([height, 0]);
+    .range([height, 0]);
 var yAxis = svg.append("g")
-  .attr("class", "myYaxis")
+    .attr("class", "myYaxis")
 
 // update the data once onclick event occurs
 function update(selectedVar) {
@@ -64,7 +64,7 @@ function update(selectedVar) {
         .attr("y", function(d) { return y(d[selectedVar]); })
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
-        .attr("fill", "#69b3a2")
+        .attr("fill", "#97b369")
     })
 
 }
