@@ -26,7 +26,7 @@
     <div class="container-fluid">
       <span class="navbar-brand" href="#">
        
-        <img src="climatechangepic1.jpeg" width="30px" height="30px"  class="d-inline-block align-text-top" >  Beware of Climate Change</span>
+        <img src="climatechangepic1.jpeg" width="30px" height="30px"  class="d-inline-block align-text-top" style="margin-right: 0.2cm;margin-left: 0.2cm;" >  Beware of Climate Change</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -107,8 +107,7 @@
         <div class="container">
           <h3  class="display-4"  id="causes" >Causes of climate Change</h3>
             <br>
-            <p1 class="lead">Causes can be categorised into Human activities and natural carbon emisstions give rise to greenhouse gases such as CO2, Chlorofluorocarbons, and Methane, concentrated in the atmosphere, 
-              which might lead to global warming. 
+            <p1 class="lead">Causes can be categorised into Human activities, including fossil fuel combustion, deforestation, consumption of meat, and naturally occured carbon emissions such as melting of permafrost. 
             </p1>
             <br> 
             <br>
@@ -120,7 +119,7 @@
             <h3 >Human activities:
               Burning Fossil Fuels (coal and oil) to generate electricity 
             </h3>
-            <p >Since coal powerplants in the USA contribute to<a href="https://www.ucsusa.org/resources/coal-power-impacts" target="_blank" style="color:cornsilk">a 1/3 of elctricity </a>, the process of Fuel Combustion causes CO2 and Methane to became major sources of greenhouse gas to the atmosphere</p>
+            <p >Data shows coal powerplants in the USA contribute to<a href="https://www.ucsusa.org/resources/coal-power-impacts" target="_blank" style="color:cornsilk">a 1/3 of elctricity </a>, the process of Fuel Combustion causes CO2 and Methane to became major sources of greenhouse gas to the atmosphere</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -182,6 +181,7 @@
    <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <br>
+
       <h3 class="display-4" id ="impacts">Evidence of climate Change: Tropical cyclones</h3>
         <p1 class="lead"> Human activities and natural carbon emisstions give rise to greenhouse gases such as CO2, Chlorofluorocarbons, and Methane, concentrated in the atmosphere, which might lead to global warming.
           As a result, rising temperature give rise to extreme weathers. One of which is the formation of tropical storms called Hurricanes or Typhoons.  
@@ -260,26 +260,55 @@
       <!-- A graph will take place -->
    
     
-    <div class="container">
+    <div class="container" >
       <p1 class="lead">Here is a data from NOAA which displays the frequency of hurricanes in The Atlantic Ocean between 1850 and 2018</p1>
       <p class="lead">
       <br>
-      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('Frequency')">Frequency of Hurricanes of the Decade</a>
+     
+      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('Frequency')" style="margin-bottom: 1cm;">Frequency of Hurricanes of the Decade</a>
+      
       <br>
+      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('FreqOverhundred')" style="margin-bottom: 1cm;">Frequency of Hurricanes with windspeeds over 100mph</a>
+      
       <br>
-      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('FreqOverhundred')">Frequency of Hurricanes with windspeeds over 100mph</a>
-      <br>
-      <br>
-      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('percentage')">Percentage (over 100mph / total no. of Hurricanes) </a>
+      <a class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('percentage')" style="margin-bottom: 1cm;">Percentage (over 100mph / total no. of Hurricanes) </a>
+      
     </p>
       
       <p>Figure 1.0</p>
      
       <div id="windspeed_chart"></div>
       <script src="chartsnfigures.js"></script>
+
+      
+      </div>
+
+    <div class="accordion accordion-flush bg-light" id="accordionFlushExample" >
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+            So, What does it show
+          </button>
+        </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" >
+        <div class="accordion-body">
+          <p>The data fails to show that shows the increasing trend between number of hurricanes with time. 
+            The first two graph shows the frequency of Hurricanes and over 100mph windspeed hurricanes in every 10 year period.
+            However these 2 graphs could not be representative of the trend as 
+             <br>
+            <br>
+            The percentage of stronger hurricanes in all storms can more accuractely describe whether or not the relation of storms and global warming exists. There are fluctuations throughtout the trend. The frequency reaches a maximum of 30 hurricanes in 1940-49 season however, plunges to new low in the 1960-69 season. 
+            The trend rose slightly throughout the rest of the seasons but remains a steady average of 25 cyclones per decade in </p1>
+            1940-49 season remains the most frequent of the group with 10 hurricanes
+            As a result, it is insignificant to call an increasing trend between frequency of tropical storms and time</p>
+        
+        </div>
+      </div>
     </div>
-      <p1 class="lead"> List of some Cat 5 hurricanes in the US from 1900 to 2021 and their respective records</p1>
     
+    <br>
+
+      <p1 class="lead" > List of some Cat 5 hurricanes in the US from 1900 to 2021 and their respective records. 
       
       
 
@@ -300,16 +329,12 @@
         <li>Deadliest U.S. Hurricane since 1928: Katrina, 2005 (at least 1,300).2005 had three of the six strongest hurricanes on record: 
           Wilma 882 mb (1st), Rita 897 mb (4th), Katrina 902 mb (6th)</li>
         <li>2018: Hurricane Michael</li>
-    </ul>
+      </ul>
         link can be found in <a href="hist"><a href="https://hurricane.com/hurricane-records/"
             target="_blank"> www.hurricane.com</a>
     </div>
     
-    <section id="videos">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=qDgtRFlaZT4&t=203s" allowfullscreen=""></iframe>
-      </div>
-    </section>
+    
   </div>   
         
     
