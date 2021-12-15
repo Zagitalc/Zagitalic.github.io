@@ -26,6 +26,13 @@ var x = d3.scaleBand()
     .padding(0.1);
 var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
+
+xAxis.append("text")
+    .attr("transform",
+        "translate(" + (width/ 2) + " ," +
+        (margin.bottom ) + ")")
+    .style("text-anchor", "middle")
+    .text("Date");
     
 
 
