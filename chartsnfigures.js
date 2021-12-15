@@ -27,7 +27,7 @@ var x = d3.scaleBand()
 var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
 
-xAxis.append("text")
+const xAxisG= xAxis.append("text")
     .attr("transform",
         "translate(" + (width/ 2) + " ," +
         (margin.bottom ) + ")")
