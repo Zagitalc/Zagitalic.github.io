@@ -1,0 +1,20 @@
+date,amount, market ,status,country_code,state_code,region,city,funding_rounds,founded_at,founded_month,founded_quarter,founded_year,last_funding_at,seed
+31/12/2014,11500, Incubators ,operating,MEX,,MEX - Other,Hermosillo,1,,,,,31/12/2014,11500
+24/12/2014,7500, Online Gaming ,operating,USA,TX,Houston,Houston,1,01/08/2014,2014-08,2014-Q3,2014,24/12/2014,750000
+20/11/2014,    , Enterprise Software ,operating,,,,,1,01/01/2013,2013-01,2013-Q1,2013,20/12/2014,0
+10/10/2014,    , Social Media ,operating,USA,CA,Anaheim,Newport Beach,1,26/08/2014,2014-08,2014-Q3,2014,10/12/2014,0
+02/10/2014,140234, Biotechnology ,operating,DEU,,Cologne,Köln,1,01/01/2010,2010-01,2010-Q1,2010,02/12/2014,14081347
+02/09/2014,    , Enterprise Software ,operating,USA,NY,New York City,Brooklyn,1,01/06/2012,2012-06,2012-Q2,2012,02/12/2014,0
+02/08/2014,10000, Biotechnology ,operating,CHN,,Beijing,Beijing,1,01/01/2012,2012-01,2012-Q1,2012,02/12/2014,0
+06/07/2014,179999, Software ,operating,,,,,1,01/10/2009,2009-10,2009-Q4,2009,02/12/2014,0
+02/07/2014,25000,,operating,USA,CA,Los Angeles,Santa Monica,1,,,,,02/12/2014,0
+04/06/2014,170000, Consumers ,operating,DEU,,Berlin,Berlin,1,01/01/2014,2014-01,2014-Q1,2014,02/12/2014,0
+02/06/2014,140000, Apps ,operating,USA,CA,SF Bay Area,San Francisco,1,19/11/2014,2014-11,2014-Q4,2014,02/12/2014,1400000
+02/05/2014,50000,,operating,USA,MD,Baltimore,Baltimore,1,19/08/2014,2014-08,2014-Q3,2014,02/12/2014,0
+02/04/2014,    , Manufacturing ,operating,,,,,1,01/01/2014,2014-01,2014-Q1,2014,02/12/2014,0
+03/03/2014,490000, Wireless ,operating,PRT,,Porto,Porto,1,01/01/2012,2012-01,2012-Q1,2012,02/12/2014,0
+02/03/2014,340000,,operating,CHE,,Zurich,Zürich,1,,,,,02/12/2014,0
+02/02/2014,560300, Games ,operating,,,,,1,,,,,01/12/2014,0
+01/02/2014,    , Biotechnology ,operating,USA,VA,"Washington, D.C.",Ashburn,1,01/10/2013,2013-10,2013-Q4,2013,01/12/2014,0
+02/01/2014,600000,,operating,USA,CA,SF Bay Area,Palo Alto,1,,,,,01/12/2014,0
+01/01/2014,140000,,operating,,,,,1,01/01/2013,2013-01,2013-Q1,2013,01/12/2014,0
