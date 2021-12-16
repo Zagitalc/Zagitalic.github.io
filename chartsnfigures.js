@@ -10,7 +10,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
 */    
 
 // append the svg object to the body of the page
-var svg1 = d3.select("#seatemp_chart")
+var svg = d3.select("#seatemp_chart")
   .append("svg1")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -23,29 +23,29 @@ d3.csv("seatempincrease.csv",
 
   //format the variables:
   function(d){
-    return { date : d3.timeParse("Y")(d.Year), value : d.MeanSeaTemp}
+    return { date : d3.timeParse("%Y")(d.Year), value : d.MeanSeaTemp}
   },
 
   // Use the dataset:
   function(data) {
 
     // Add X axis --> it is a date format
-    var x1 = d3.scaleTime()
+    var x = d3.scaleTime()
       .domain(d3.extent(data, function(d) { return d.Year; }))
       .range([ 0, width ]);
-    svg1.append("g")
+    svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x1));
+      .call(d3.axisBottom(x));
 
     // Add Y axis
-    var y1 = d3.scaleLinear()
+    var y = d3.scaleLinear()
       .domain([0, d3.max(data, function(d) { return +d.MeanSeaTemp; })])
       .range([ height, 0 ]);
-    svg1.append("g")
-      .call(d3.axisLeft(y1));
+    svg.append("g")
+      .call(d3.axisLeft(y));
 
     // Add the line
-    svg1.append("path")
+    svg.append("path")
       .datum(data)
       .attr("fill", "none")
       .attr("stroke", "steelblue")
@@ -83,7 +83,7 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
 
 
  
-
+/*
 // append svg to body
 var svg = d3.select("#windspeed_chart")
     .append("svg")
@@ -108,7 +108,7 @@ svg.append("text")
     .text("Date");
   */
 
-
+/*
 var y = d3.scaleLinear()
     .range([height, 0]);
 var yAxis = svg.append("g")
@@ -152,3 +152,4 @@ function update(selectedVar) {
 //main
 // Initialize plot
 update('Frequency')
+*/
