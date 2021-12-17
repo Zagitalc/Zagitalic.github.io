@@ -1,3 +1,30 @@
+
+/**
+ * update the bar chart using onmouseover and onmouseout events
+ * reference: w3schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_dom
+ */
+
+
+function hover(btnName,newVar){
+
+document.getElementById(btnName,newVar).onmouseover = function() {mouseOver(btnName,newVar)};
+document.getElementById(btnName).onmouseout = function() {mouseOut(btnName)};
+}
+
+
+function mouseOver(btnName,newVar){
+    document.getElementById(btnName).innerText="Hello! Data has been activated successfully!" 
+    update(newVar) 
+    
+}    
+ 
+function mouseOut(btnName){
+    document.getElementById(btnName).innerText="Frequency of Hurricanes of the Decade"  
+}
+hover("button1",'Frequency')
+hover("button2",'FreqOverhundred')
+hover("button3",'percentage')
+
 /**
  * Reference: Bar chart modified from Yan Holtz at https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
  * // set the dimensions and margins of the graph
@@ -28,7 +55,7 @@ var svg = d3.select("#windspeed_chart")
     .attr("transform", 
     "translate(" + margin.left + "," + margin.top + ")");
 /**
- * //set variables x, y, X and Y axes 
+ * set variables x, y, X and Y axes 
  */
 
 var x = d3.scaleBand()
@@ -44,7 +71,7 @@ var yAxis = svg.append("g")
     .attr("class", "myYaxis")
 
 /**
- * // update the data once onclick event occurs
+ * update the data once onclick event occurs
  * @param {string} selectedVar - value of the y coorinate e.g hurricane Frequency 
  */
 
@@ -53,30 +80,28 @@ function update(selectedVar) {
 
 
 /**
- * // append the rectangles for the bar chart
- * // X axis
+ * append the rectangles for the bar chart
+ *  X axis
  */
     
     
     x.domain(data.map(function(d) { return d.Decade; }))
     xAxis.transition().duration(1000).call(d3.axisBottom(x))
+    
     /**
-     * 
+     * Add Y axis
      */
-    // Add Y axis
     y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
+    
     /**
-     *  variable u: map data to existing bars
+     *  @var {u} - map data to existing bars
      */
    
     var u = svg.selectAll("rect")
     .data(data)
     
-    /**
-     *  @var // update bars
-     */
-
+    
    
     u
     .enter()
