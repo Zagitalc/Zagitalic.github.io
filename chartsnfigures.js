@@ -1,14 +1,17 @@
 
 /**
  * update the bar chart using onmouseover and onmouseout events
- * reference: w3schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_dom
+ * @param {btnName} - button name
+ * @param {newVar} - variable on the y axis to be updated
+ * @param {revertText} - to display the original test on the targeted button
+ * mouseover event reference: w3schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseover_dom
  */
 
 
-function hover(btnName,newVar){
+function hover(btnName,newVar,revertText){
 
 document.getElementById(btnName,newVar).onmouseover = function() {mouseOver(btnName,newVar)};
-document.getElementById(btnName).onmouseout = function() {mouseOut(btnName)};
+document.getElementById(btnName,revertText).onmouseout = function() {mouseOut(btnName,revertText)};
 }
 
 
@@ -18,12 +21,12 @@ function mouseOver(btnName,newVar){
     
 }    
  
-function mouseOut(btnName){
-    document.getElementById(btnName).innerText="Frequency of Hurricanes of the Decade"  
+function mouseOut(btnName,revertText){
+    document.getElementById(btnName).innerText=revertText
 }
-hover("button1",'Frequency')
-hover("button2",'FreqOverhundred')
-hover("button3",'percentage')
+hover("button1",'Frequency','Frequency of Hurricanes ')
+hover("button2",'FreqOverhundred','Frequency of Hurricanes with windspeeds over 100mph')
+hover("button3",'percentage','Percentage (over 100mph / total no. of Hurricanes)' )
 
 /**
  * Reference: Bar chart modified from Yan Holtz at https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
