@@ -7,8 +7,6 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
     width = 1020 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
-// E.g. adapted from student work from 2020/21 P-Gold cohort.
-// Line graph from: Y. Holtz, "Basic line chart in d3.js", D3-graph-gallery.com, 2021. [Online]. Available: https://www.d3-graph-gallery.com/graph/line_basic.html. [Accessed: 21- Jan- 2021].
 
 
 
@@ -23,17 +21,14 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
 
 
 // set the dimensions and margins of the graph
-/*
-var margin = {top: 30, right: 30, bottom: 70, left: 60},
-    width = 1020 - margin.left - margin.right,
-    height = 800 - margin.top - margin.bottom;
-
-*/
 
  
 
 // append svg to body
-
+/**
+ * @type {string}
+ *  
+ */
 var svg = d3.select("#windspeed_chart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
