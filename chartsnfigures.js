@@ -29,6 +29,7 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
  
 
 // append svg to body
+
 var svg = d3.select("#windspeed_chart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
