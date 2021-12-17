@@ -26,7 +26,6 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
 
 */
 
-
  
 
 // append svg to body
