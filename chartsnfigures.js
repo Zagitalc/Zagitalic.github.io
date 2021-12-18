@@ -14,16 +14,25 @@ document.getElementById(btnName,newVar).onmouseover = function() {mouseOver(btnN
 document.getElementById(btnName,revertText).onmouseout = function() {mouseOut(btnName,revertText)};
 }
 
-
+/**
+ * displays updated button message 
+ */
 function mouseOver(btnName,newVar){
     document.getElementById(btnName).innerText="Hello! Data has been updated successfully!" 
     update(newVar) 
     
 }    
- 
+
+/**
+ *  display the original test on the targeted button
+ */
 function mouseOut(btnName,revertText){
     document.getElementById(btnName).innerText=revertText
 }
+
+/**
+ * links to buttons of 4 variables
+ */
 hover("btnFreq",'Frequency','Frequency of Hurricanes')
 hover("btnFreq100",'FreqOverhundred','Frequency of Hurricanes with windspeeds over 100mph')
 hover("btnPercent",'percentage','Percentage (over 100mph / total no. of Hurricanes)' )
@@ -31,20 +40,12 @@ hover("btnEnergy",'EnergyIndex','Accumulated Cyclone Energy (10^(-4) kt^2)' )
 hover("btnSeaTmp",'MeanSeaTemp','Mean Sea Temperature (Mean based on year 1990')
 /**
  * Reference: Bar chart modified from Yan Holtz at https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
- * // set the dimensions and margins of the graph
+ * set the dimensions and margins of the graph
  */
 
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
     width = 1020 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
-
-
-/**
- * set the dimensions and margins of the graph
- *  */ 
-
- 
-
 
 /**
  * // append svg to body
@@ -99,7 +100,7 @@ function update(selectedVar) {
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
     
     /**
-     *  @var {u} - map data to existing bars
+     *  @var {u} - map data such as width, height and selected var to existing bars
      */
    
     var u = svg.selectAll("rect")
