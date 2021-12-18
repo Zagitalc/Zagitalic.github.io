@@ -24,10 +24,11 @@ function mouseOver(btnName,newVar){
 function mouseOut(btnName,revertText){
     document.getElementById(btnName).innerText=revertText
 }
-hover("button1",'Frequency','Frequency of Hurricanes ')
+hover("button1",'Frequency','Frequency of Hurricanes')
 hover("button2",'FreqOverhundred','Frequency of Hurricanes with windspeeds over 100mph')
 hover("button3",'percentage','Percentage (over 100mph / total no. of Hurricanes)' )
-
+hover("btnEnergy",'EnergyIndex','Accumulated Cyclone Energy (10^(-4) kt^2)' )
+hover("btnSeaTmp",'MeanSeaTemp','Mean Sea Temperature (Mean based on year 1990')
 /**
  * Reference: Bar chart modified from Yan Holtz at https://www.d3-graph-gallery.com/graph/barplot_button_data_csv.html
  * // set the dimensions and margins of the graph
