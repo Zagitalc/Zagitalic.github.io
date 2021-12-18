@@ -16,7 +16,7 @@ document.getElementById(btnName,revertText).onmouseout = function() {mouseOut(bt
 
 
 function mouseOver(btnName,newVar){
-    document.getElementById(btnName).innerText="Hello! Data has been activated successfully!" 
+    document.getElementById(btnName).innerText="Hello! Data has been updated successfully!" 
     update(newVar) 
     
 }    
