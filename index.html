@@ -254,7 +254,7 @@
       
       
       <br>
-      <a id="btnSeaTmp" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('MeanSeaTemp')" style="margin-bottom: 1cm;">Mean Sea Temperature (Mean based on year 1900) </a>
+      <a id="btnSeaTmp" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('MeanSeaTemp')" style="margin-bottom: 1cm;">Mean Sea Temperature (base Temp set as year 1900) </a>
       <br>
       
       <a id="btnEnergy" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('EnergyIndex')" style="margin-bottom: 1cm;">Accumulated Cyclone Energy (10^(-4) kt^2)) </a>
@@ -279,7 +279,7 @@
 
   
     </div>
-    <p>Figure 2.0</p>
+    <p>Figure 1.0</p>
     <div id="windspeed_chart"></div>
     <!--script for the hurricane trend chart-->
     <script src="chartsnfigures.js"></script>
@@ -296,12 +296,12 @@
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
             <div class="accordion-body">
               <p>
-              Power Discipation of Cycllones did show an positive correlation with Increasing Temperature over time. According to Figure 2, The  <a href="https://datahub.io/core/global-temp#resource-annual" style="color:rgb(46, 45, 41)">10-year-average global temperature </a> showed an increasing trend with time from 0.092C in 1880 to around 1.052C in 2018.
-               This is supported by <a href="https://www.pnas.org/content/110/30/12219/tab-figures-data" style="color:rgb(46, 45, 41)">The prosceding of National Academy of Science (2013)</a>
+              Power Discipation of Cycllones did show an positive correlation with Increasing Temperature over time. According to Figure 2, The  <a href="https://datahub.io/core/global-temp#resource-annual" style="color:rgb(46, 45, 41)">10-year-average global temperature </a> showed an increasing trend with time from 0.092°C in 1880 to around 1.052°C in 2018.
+               This is supported by <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2002JD002670" style="color:rgb(46, 45, 41)">Rayner(2003)</a>
 
               
-               This shows evidence of global warming as a result of greenhouse effect. Selecting <a href="#btnEnergy" style="color:rgb(46, 45, 41)"> "Accumulated Cyclone Energy"</a> as our variable, an positive relationship of energy index with time can also be found despite some fluctuations of data in the 1890-99. Combining these 2 sets of Data, we can conclude that the rise in global temperature caused by global warming
-               might cause the overall strength of hurricanes to increase. This is also supported by <a href="https://www.pnas.org/content/110/30/12219/tab-figures-data" style="color:rgb(46, 45, 41)">The prosceding of National Academy of Science (2013)</a>
+               This shows evidence of global warming as a result of greenhouse effect. Selecting <a href="#btnEnergy" style="color:rgb(46, 45, 41)"> "Accumulated Cyclone Energy (10^(-4) kt^2)"</a> as our variable, an positive relationship of energy index with time can also be found despite some fluctuations of data in the 1890-99. Combining these 2 sets of Data, we can conclude that the rise in global temperature caused by global warming
+               might cause the overall strength of hurricanes to increase. This is likely due to warmer ocean temperatures that provide greater source of energy for Hurricane sustainability, with evidence supported by <a href="https://www.pnas.org/content/110/30/12219/tab-figures-data" style="color:rgb(46, 45, 41)">The prosceding of National Academy of Science (2013)</a>
 
               </p>            
             </div>
@@ -318,7 +318,8 @@
               <p>
                 The data however, fails to show such trend.  <a href="https://link.springer.com/article/10.1007/s00382-013-1713-0" target="_blank" style="color:rgb(46, 45, 41)"> According to Climate dynamics(2013) </a> and <a href="https://link.springer.com/article/10.1007/s00382-013-1713-0" target="_blank" style="color:rgb(46, 45, 41)">Li (2020)</a>,
                 an increasing trend between rise of ocean temperature and frequency of hurricanes has been observed.
-                The first two graphs show the frequency of Hurricanes and over 100mph windspeed hurricanes in every 10 year period.
+
+                We focus on 2 variables, <a href="#btnFreq"  style="color:rgb(46, 45, 41)"> frequency of Hurricanes </a> and <a href="#btnFreq100"  style="color:rgb(46, 45, 41)"> that over 100mph windspeed hurricanes in every 10 year period.</a>
                 However these 2 graphs could not be representative of the trend due to variation of datapoints. In both cases, there is a general increasing trend  of hurricanes from the 1850s to 1950s, a strong decline in the 1960s and another increase from that year onwards. 
                 However, given the drastic increase of sea temperature with time didn't reflect the increasing trend of hurricanes, such a relationship could not be deduced.
                 <br>
