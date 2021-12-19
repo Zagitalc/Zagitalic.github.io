@@ -14,8 +14,10 @@ var svg = d3.select("#hurpie_chart")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// Create dummy data
-var data = {a: 9, b: 20, c:30, d:8, e:12}
+/**
+ * Create dummy data
+ */
+var data = {Labour_Day: 160, Camille: 150, Andrew:145, Michael:140, Last_Island:130}
 
 // set the color scale
 var color = d3.scaleOrdinal()
@@ -51,7 +53,7 @@ svg
   .data(data_ready)
   .enter()
   .append('text')
-  .text(function(d){ return "grp " + d.data.key})
+  .text(function(d){ return d.data.key +" "+ d.data.value})
   .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
   .style("text-anchor", "middle")
-  .style("font-size", 17)
+  .style("font-size", 14)

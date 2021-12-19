@@ -280,40 +280,50 @@
 
      <!--Graph session: frequency of hurricane from 1850 - 2018 -->
     <div class="container" >
-      <p1 class="lead">Here is a data from <a href="https://www.aoml.noaa.gov/hrd/hurdat/UShurrs_detailed.html?print=yes"  style="color: rgb(0, 0, 0)">NOAA</a> which can be used to investigate the frequency of hurricanes in The Atlantic Ocean between 1850 and 2018</p1>
+      <p1 class="lead">Here is a data from <a href="https://www.aoml.noaa.gov/hrd/hurdat/UShurrs_detailed.html?print=yes"  style="color: rgb(0, 0, 0)">NOAA</a> which can be used to investigate the frequency of hurricanes in The Atlantic Ocean between 1850 and 2018.</p1>
+      <br>
+      <br>
+      <div class="container">
+        <p>Figure 1.0</p>
+        <div id="hurpie_chart"></div>
+        
+     
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="factspiechart.js"></script>
+        </div>
+
+
       <p class="lead">
       
-      <!--buttons for variable switching-->
-      <br>
-      <a id="btnSeaTmp" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('MeanSeaTemp')" style="margin-bottom: 1cm;">Mean Sea Temperature (base Temp set as year 1900) </a>
-      <br>
-      
-      <a id="btnEnergy" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('EnergyIndex')" style="margin-bottom: 1cm;">Accumulated Cyclone Energy (10^(-4) kt^2)) </a>
-      <br>
+        <!--buttons for variable switching-->
+        <br>
+        <a id="btnSeaTmp" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('MeanSeaTemp')" style="margin-bottom: 1cm;">Mean Sea Temperature (base Temp set as year 1900) </a>
+        <br>
+        
+        <a id="btnEnergy" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('EnergyIndex')" style="margin-bottom: 1cm;">Accumulated Cyclone Energy (10^(-4) kt^2)) </a>
+        <br>
 
-      <a id="btnFreq" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('Frequency')" style="margin-bottom: 1cm;">Frequency of Hurricanes of the Decade</a>
-      
-      <br>
-      <a id="btnFreq100" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('FreqOverhundred')" style="margin-bottom: 1cm;">Frequency of Hurricanes with windspeeds over 100mph</a>
-      
-      <br>
-      <a id="btnPercent" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('percentage')" style="margin-bottom: 1cm;">Percentage (over 100mph / total no. of Hurricanes) </a>
-      
+        <a id="btnFreq" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('Frequency')" style="margin-bottom: 1cm;">Frequency of Hurricanes of the Decade</a>
+        
+        <br>
+        <a id="btnFreq100" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('FreqOverhundred')" style="margin-bottom: 1cm;">Frequency of Hurricanes with windspeeds over 100mph</a>
+        
+        <br>
+        <a id="btnPercent" class="btn btn-secondary btn-lg " role="button" aria-pressed="true" onclick="update('percentage')" style="margin-bottom: 1cm;">Percentage (over 100mph / total no. of Hurricanes) </a>
+        
       </p>
       
     </div>
-    <p>Figure 1.0</p>
+    
+    
+
+    <p>Figure 2.0</p>
     <div id="windspeed_chart"></div>
     <!--script for the hurricane trend chart-->
     <script src="hurtrendbargraph.js"></script>
-
-
-    <div id="hurpie_chart"></div>
-    <script src="factspiehart.js"></script>
-    <!--script for colour schemes for piechart-->
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
-
+    
+    
+   
     <!--findings regarding hurricane bar chart-->
       <div class="accordion " id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
