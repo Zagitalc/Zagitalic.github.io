@@ -19,23 +19,27 @@ var svg = d3.select("#hurpie_chart")
  */
 var data = {Labour_Day: 160, Camille: 150, Andrew:145, Michael:140, Last_Island:130}
 
-// set the color scale
+/**
+ *  set the color scale
+ */ 
 var color = d3.scaleOrdinal()
   .domain(data)
   .range(d3.schemeSet2);
+/**
+ *  Compute the position of each group on the pie:
+ */
 
-// Compute the position of each group on the pie:
 var pie = d3.pie()
   .value(function(d) {return d.value; })
 var data_ready = pie(d3.entries(data))
-// Now I know that group A goes from 0 degrees to x degrees and so on.
 
-// shape helper to build arcs:
 var arcGenerator = d3.arc()
   .innerRadius(0)
   .outerRadius(radius)
 
-// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+/**
+ *  Build the pie chart using the arc function.
+ */
 svg
   .selectAll('mySlices')
   .data(data_ready)
@@ -53,7 +57,8 @@ svg
   .data(data_ready)
   .enter()
   .append('text')
-  .text(function(d){ return d.data.key +" "+ d.data.value})
+  .text(function(d){ return d.data.key +`" "
+  " "`+ d.data.value})
   .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
   .style("text-anchor", "middle")
   .style("font-size", 14)
