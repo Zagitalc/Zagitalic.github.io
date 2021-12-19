@@ -48,9 +48,10 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
     height = 800 - margin.top - margin.bottom;
 
 /**
- * // append svg to body
- * @type {svg}
- *  
+ * append svg to body
+ * reads #windspeed_chart as csv file
+ * @param {csv} windspeed_chart - csv file
+ * scales x, y, X and Y axes 
  */
 var svg = d3.select("#windspeed_chart")
     .append("svg")
@@ -59,9 +60,7 @@ var svg = d3.select("#windspeed_chart")
     .append("g")
     .attr("transform", 
     "translate(" + margin.left + "," + margin.top + ")");
-/**
- * set variables x, y, X and Y axes 
- */
+
 
 var x = d3.scaleBand()
     .range([0, width])
@@ -86,7 +85,7 @@ function update(selectedVar) {
 
 /**
  * append the rectangles for the bar chart
- *  X axis
+ *  Adds X axis
  */
     
     
@@ -100,7 +99,7 @@ function update(selectedVar) {
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
     
     /**
-     *  @var {u} - map data such as width, height and selected var to existing bars
+     *  @var {u} - map data such as width, height and selected variables to existing bars
      */
    
     var u = svg.selectAll("rect")
