@@ -76,7 +76,6 @@ svg
  *  Coordinates obtained using the centroid method 
  *   
  */
-
 svg
   .selectAll('mySlices')
   .data(data_ready)
