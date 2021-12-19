@@ -99,7 +99,7 @@ function update(selectedVar) {
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
     
     /**
-     *  @var {u} - map data such as width, height and selected variables to existing bars
+     *   map data such as width, height and selected variables to existing bars
      */
    
     var u = svg.selectAll("rect")
